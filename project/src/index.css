@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0EA5E9;
+  --neon-blue: #00F0FF;
+  --neon-pink: #FF00F5;
+  --neon-green: #00FF66;
+}
+
+body {
+  @apply bg-white dark:bg-dark text-gray-900 dark:text-gray-100;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.neon-border {
+  @apply relative;
+}
+
+.neon-border::before {
+  content: '';
+  @apply absolute -inset-0.5 bg-gradient-to-r from-neon-blue via-neon-pink to-neon-green rounded-lg blur opacity-75 transition-opacity duration-300;
+}
+
+.neon-border:hover::before {
+  @apply opacity-100;
+}
+
+.project-card {
+  @apply relative bg-white dark:bg-dark-100 rounded-xl p-6 transition-all duration-300 hover:transform hover:scale-105;
+}
+
+.tech-icon {
+  @apply w-12 h-12 transition-all duration-300 hover:transform hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(0,240,255,0.5)];
+}
+
+.timeline-item {
+  @apply relative pl-8 pb-8 border-l-2 border-gray-200 dark:border-gray-800;
+}
+
+.timeline-item::before {
+  content: '';
+  @apply absolute left-[-9px] top-0 w-4 h-4 bg-neon-blue rounded-full;
+}
