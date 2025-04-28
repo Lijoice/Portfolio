@@ -73,12 +73,15 @@ export default function Hero() {
 
 
           {/* Contact Me Button */}
-          <a
-            href="mailto:lijoice.cs@gmail.com?subject=Let's Connect&body=Hi Lijoice,"
-            className="px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-pink text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
-          >
-            Contact Me
-          </a>
+          <button 
+  onClick={() => {
+    window.location.href = 'mailto:lijoice.cs@gmail.com?subject=Let%27s%20Connect&body=Hi%20Lijoice,';
+  }} 
+  className="px-6 py-3 bg-gradient-to-r from-neon-green to-neon-blue text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+>
+  Contact Me
+</button>
+
         </motion.div>
 
         {/* Social Links */}
