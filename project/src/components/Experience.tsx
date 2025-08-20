@@ -2,12 +2,12 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 const experiences = [
-  {
-    title: 'Cloud Computing Intern',
-    company: 'DXC Technologies',
-    period: '2024',
-    description: 'Gained hands-on experience with cloud platforms, focusing on cloud architecture, deployment models, and cloud services for business applications.'
-  },
+  // {
+  //   title: 'Cloud Computing Intern',
+  //   company: 'DXC Technologies',
+  //   period: '2024',
+  //   description: 'Gained hands-on experience with cloud platforms, focusing on cloud architecture, deployment models, and cloud services for business applications.'
+  // },
   {
     title: 'MERN Stack Intern',
     company: 'Better Tomorrow',
@@ -27,7 +27,7 @@ const education = [
     degree: 'B.Tech in Information Technology',
     institution: 'Sri Eshwar College of Engineering',
     period: '2022 - 2026',
-    grade: 'CGPA: 7.4 (upto 4th SEM)',
+    grade: 'CGPA: 7.42 (upto 6th SEM)',
   },
   {
     degree: 'Higher Secondary (HSC)',
